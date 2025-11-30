@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beverage Browser</title>
+  <link rel="stylesheet" href="cla.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h2>Find the Drink You Love</h2>
+
+    <div class="search-container">
+      <input id="lookupField" type="text" placeholder="Type drink name..." />
+      <button id="lookupBtn">Find</button>
+    </div>
+
+    <div class="main-content">
+      <div>
+        <div id="gridBox"></div>
+        <p id="emptyMsg" style="display: none;">No drinks match your search.</p>
+      </div>
+
+      <aside>
+        <h5>Selected Items: <span id="bagCount">0</span></h5>
+        <ul id="bagItems"></ul>
+      </aside>
+    </div>
+  </div>
+
+  <div id="infoModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="infoTitle"></h5>
+        <button class="btn-close">&times;</button>
+      </div>
+      <div id="infoBody" class="modal-body"></div>
+    </div>
+  </div>
+  <script src="cla.js"></script>
+</body>
+</html>
